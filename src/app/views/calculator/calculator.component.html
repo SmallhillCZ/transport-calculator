@@ -1,0 +1,30 @@
+<header>
+  <h1>Kalkulátor dopravy</h1>
+</header>
+
+<nav>
+  <h2>Vyberte si kalkulátor</h2>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 text-center px-5">
+        <h3>Roční náklady na auto</h3>
+        <p>Vyplatí se vám si auto koupit, pronajmout na operativní leasing, nebo používat car-sharing?</p>
+        <a routerLink="/rok" [ngx-scroll-to]="calculator" class="btn btn-primary">Spočítat</a>
+      </div>
+      <div class="col-md-4 text-center px-5 commingsoon">
+        <h3>Cesta z místa na místo</h3>
+        <p>Kolik vás bude stát cesta z místa na místo?<br>Vyplatí se auto, nebo veřejná doprava?</p>
+        <a class="btn btn-light disabled">Připravujeme</a>
+      </div>
+      <div class="col-md-4 text-center px-5 commingsoon">
+        <h3></h3>
+        <p></p>
+        <a class="btn btn-light disabled">Připravujeme</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="calculator" class="bg-light" #calculator>
+  <router-outlet></router-outlet>
+</div>
